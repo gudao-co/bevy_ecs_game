@@ -1,6 +1,6 @@
 [package]
 name = "bevy_ecs_game"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Script User <dev@gudao.co>"]
 edition = "2024"
 description = "A lightweight game framework built on Bevy ECS, focused on deterministic gameplay logic, AI systems, and scalable simulation. Designed for cross-platform projects and shared client/server architectures, enabling high-performance roguelike and multiplayer games."
@@ -10,6 +10,6 @@ repository = "https://github.com/gudao-co/bevy_ecs_rpc.git"
 [dependencies]
 bevy_ecs = "0.18"
 bevy_ecs_rpc_macro = "0.1.0"
-bevy_ecs_rpc = "0.1.0"
+bevy_ecs_rpc = "0.1.1"
 rmp-serde = "1.3.1"
 serde = { version = "1.0", features = ["derive"] }

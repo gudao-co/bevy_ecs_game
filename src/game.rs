@@ -28,7 +28,7 @@ impl Game {
         }
     }
 
-    pub fn snapshot(&mut self) -> &[u8] {
+    pub fn snapshot(&mut self) -> &Vec<u8> {
         self.world.resource_scope(|_, mut rpc: Mut<RpcMem>| {
             self.buf.clear();
             self.buf.extend_from_slice(rpc.snapshot());
@@ -36,7 +36,7 @@ impl Game {
         &self.buf
     }
 
-    pub fn update(&mut self, dt: f32, invoke: &[u8]) -> &[u8] {
+    pub fn update(&mut self, dt: f32, invoke: &[u8]) -> &Vec<u8> {
         self.world.resource_scope(|_, mut time: Mut<Time>| {
             time.dt = dt;
         });

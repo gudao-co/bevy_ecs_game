@@ -99,7 +99,7 @@ dependencies = [
 
 [[package]]
 name = "bevy_ecs_game"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "bevy_ecs",
  "bevy_ecs_rpc",
@@ -122,9 +122,9 @@ dependencies = [
 
 [[package]]
 name = "bevy_ecs_rpc"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1d60cf62ab453d362907db452e93746b60cdc015b39018fa6b4c540df9fb6edc"
+checksum = "0956a820e033757aa85dd75d185a7d14f11eff63266eb9d024c2d92389cb0fbb"
 dependencies = [
  "bevy_ecs",
  "rmp-serde",
